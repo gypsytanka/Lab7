@@ -16,7 +16,6 @@ int main() {
     if (years > 0) case_selector += 1;
     if (remaining_months > 0) case_selector += 2;
 
-    // Вывод лет
     switch (years) {
     case 1: printf("1 год"); break;
     case 2: printf("2 года"); break;
@@ -48,4 +47,5 @@ int main() {
 
     printf("\n");
     return 0;
+
 }
