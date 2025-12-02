@@ -12,15 +12,10 @@
 3. Разделить на годы и месяцы:
     + `int years = months / 12;`
     + `int rem_months = months % 12;`
-4. Сделать массивы для склонений:
-    + `char* year_forms[] = { "лет", "год", "года" };`
-    + `char* month_forms[] = { "месяцев", "месяц", "месяца" };`
-  
-5. Выбор склонения:
-   + ` int year_form = (years == 1) ? 1 : (years >= 2 && years <= 4) ? 2 : 0;`
-   + `int month_form = (rem_months == 1) ? 1 : (rem_months >= 2 && rem_months <= 4) ? 2 : 0;`
-7. Вывести результаты расчетов с подстановкой всех значений в текст.
-8. Конец
+    + `int case_selector = 0;` - разделитель "и"
+4. реалицация конструкций  `switch (years)`; `switch (case_selector)`;  `switch (remaining_months)`
+5. Вывести результаты расчетов с подстановкой всех значений в текст.
+6. Конец
 
 ### Блок-схема
 [Блок-схема, созданная в draw.io](https://drive.google.com/file/d/1GsgtOSjFjmOg9hUcoTEt8E5-qF5EU3Eh/view?usp=drive_link)
